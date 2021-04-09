@@ -1,0 +1,18 @@
+.cropped {
+  width: 250px; /* width of container */
+  height: 150px; /* height of container */
+  overflow: hidden;
+}
+
+.cropped img {
+  margin: -10px 0px 0px 0px;
+  display: inline-block;
+  align-items: center;
+}
+
+.foot {
+  background: #878787;
+  padding: 16px 50px;
+  height: 50px;
+  border-color: black;
+}
