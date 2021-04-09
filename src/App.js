@@ -7,6 +7,11 @@ function App() {
   const [location, setLocation] = useState("");
   const [parkingLots, setParkingLots] = useState([]);
 
+  const yelpFormula = (rating, reviewCount) => {
+    const adjustedScore = (reviewCount * rating) / (reviewCount + 1);
+    return adjustedScore.toFixed(2);
+  };
+
   const handleSubmit = (evt) => {
     evt.preventDefault();
     console.log(`Submitted ${location}`);
@@ -24,14 +29,22 @@ function App() {
       )
       .then((response) => {
         let parkingLots = response.data.businesses;
-        console.log(parkingLots);
-        parkingLots.sort((a, b) => (a.rating > b.rating ? 1 : -1));
 
         for (let i = 0; i < parkingLots.length; i++) {
           if (parkingLots[i].image_url === "") {
             parkingLots.splice(i, 1);
           }
         }
+        for (let i = 0; i < parkingLots.length; i++) {
+          const rating = parkingLots[i].rating;
+          const reviewCount = parkingLots[i].review_count;
+          const adjustedScore = yelpFormula(rating, reviewCount);
+          parkingLots[i]["adjusted_score"] = parseFloat(adjustedScore, 10);
+        }
+        parkingLots.sort((a, b) =>
+          a.adjusted_score > b.adjusted_score ? 1 : -1
+        );
+
         setParkingLots(parkingLots);
       })
       .catch();
