@@ -3,7 +3,7 @@
 ### Clone the project 
 `git clone https://github.com/connorpheraty/airgarage-coding-challenge`
 
-### Run the project using the Yarn Package Manager
+### Run the project with the Yarn Package Manager
 - Yarn Installation docs can be found [here](https://classic.yarnpkg.com/en/docs/install/#mac-stable) (for MacOS)
 
 ### Install node modules
