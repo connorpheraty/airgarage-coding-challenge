@@ -12,4 +12,5 @@
 ## Start the development server
 `yarn start`
 
+And that's it!
 
