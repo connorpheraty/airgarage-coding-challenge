@@ -9,3 +9,7 @@
 ### Install node modules
 `yarn install`
 
+### Start the Development Server
+`yarn start`
+
+And that's it!
