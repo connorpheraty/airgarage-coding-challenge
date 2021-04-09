@@ -3,7 +3,7 @@
 ### Clone the project 
 `git clone https://github.com/connorpheraty/airgarage-coding-challenge`
 
-### Add .env file at the project root
+### Add .env file at your project root
 1. Insert the following code and replace `API_KEY` with your unique key.
 2. Register [here](https://www.yelp.com/fusion) to request a Yelp API key.
 ```
