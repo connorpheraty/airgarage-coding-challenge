@@ -66,7 +66,7 @@ function App() {
                 id="location"
                 value={location}
                 className="focus:ring-indigo-500 focus:border-indigo-500 block w-full rounded-none rounded-l-md lg:pl-10 sm:pl-5 pl-3 sm:text-sm border-gray-300"
-                placeholder="San Francisco, New York, Chicago"
+                placeholder="New York, Los Angeles, Chicago..."
                 onChange={(e) => setLocation(e.target.value)}
               />
             </div>
