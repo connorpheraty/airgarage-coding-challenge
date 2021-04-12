@@ -1,7 +1,9 @@
 # AirGarage Coding Challenge Submission
 
 ### Clone the project 
-```git clone https://github.com/connorpheraty/airgarage-coding-challenge```
+```
+git clone https://github.com/connorpheraty/airgarage-coding-challenge
+```
 
 ### Add .env file at your project root
 1. Insert the following code and replace `API_KEY` with your unique key.
@@ -14,9 +16,13 @@ REACT_APP_YELP_API_KEY=API_KEY
 - Yarn Installation docs can be found [here](https://classic.yarnpkg.com/en/docs/install/#mac-stable) (for MacOS)
 
 ### Install node modules
-```yarn install```
+```
+yarn install
+```
 
 ### Start the Development Server
-```yarn start```
+```
+yarn start
+```
 
 And that's it!
